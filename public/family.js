@@ -45,8 +45,8 @@ get(child(dbRef, `data`)).then((snapshot) => {
             data.sid = data.elId + "-sumnail"
             data.mtid = data.elId + "-tatie-m"
             data.msid = data.elId + "-sumnail-m"
-            data.tatie = "images/" + data.elId + "_tatie.jpg"
-            data.sumnail = "images/" + data.elId + "_sumnail.png"
+            data.tatie = "images/" + data.elId + "_tatie.webp"
+            data.sumnail = "images/" + data.elId + "_sumnail.webp"
             data.youtube1 = "https://www.youtube.com/embed/" + data.youtube1.split("/")[3]
             data.youtube2 = "https://www.youtube.com/embed/" + data.youtube2.split("/")[3]
             data.amkl = data.id <= 2
@@ -90,5 +90,5 @@ const downloadImage = (path, id) => {
         });
 }
 
-downloadImage("images/tatie_bg.jpg", "tatie-bg1")
-downloadImage("images/tatie_bg.jpg", "tatie-bg2")
+downloadImage("images/tatie_bg.webp", "tatie-bg1")
+downloadImage("images/tatie_bg.webp", "tatie-bg2")
